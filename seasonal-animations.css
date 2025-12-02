@@ -1,0 +1,82 @@
+/* ============================================
+   SEASONAL THEME ANIMATIONS
+   ============================================ */
+
+@keyframes snowfall {
+    0% { 
+        transform: translateY(-10vh) translateX(0); 
+        opacity: 1; 
+    }
+    90% { 
+        opacity: 1; 
+    }
+    100% { 
+        transform: translateY(100vh) translateX(100px); 
+        opacity: 0; 
+    }
+}
+
+@keyframes confetti-fall {
+    0% { 
+        transform: translateY(-10vh) rotate(0deg); 
+        opacity: 1; 
+    }
+    100% { 
+        transform: translateY(100vh) rotate(360deg); 
+        opacity: 0; 
+    }
+}
+
+@keyframes spider-web {
+    0% { 
+        opacity: 0; 
+    }
+    50% { 
+        opacity: 0.3; 
+    }
+    100% { 
+        opacity: 0; 
+    }
+}
+
+@keyframes egg-bounce {
+    0%, 100% { 
+        transform: translateY(0) scale(1); 
+    }
+    50% { 
+        transform: translateY(-30px) scale(1.1); 
+    }
+}
+
+@keyframes fireworks {
+    0% { 
+        transform: translate(0, 0) scale(1); 
+        opacity: 1; 
+    }
+    100% { 
+        transform: translate(var(--tx), var(--ty)) scale(0); 
+        opacity: 0; 
+    }
+}
+
+@keyframes skull-float {
+    0%, 100% { 
+        transform: translateY(0) rotate(0deg); 
+    }
+    50% { 
+        transform: translateY(-30px) rotate(5deg); 
+    }
+}
+
+@keyframes pulse {
+    0%, 100% { 
+        opacity: 1; 
+    }
+    50% { 
+        opacity: 0.7; 
+    }
+}
+
+/* ============================================
+   END SEASONAL THEME ANIMATIONS
+   ============================================ */

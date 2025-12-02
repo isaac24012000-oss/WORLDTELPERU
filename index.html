@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WORLDTEL PERU</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="seasonal-animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
@@ -49,7 +50,7 @@
                     <span class="logo-sub">PERU</span>
                 </div>
             </div>
-            <div class="tagline-nav">Pasión por lo que hacemos, confianza en lo que ofrecemos</div>
+            <div class="tagline-nav" id="taglineNav">Pasión por lo que hacemos, confianza en lo que ofrecemos</div>
             <div class="nav-dots">
                 <div class="dot" data-section="0" title="Inicio"></div>
                 <div class="dot" data-section="1" title="Acerca de"></div>
@@ -105,7 +106,7 @@
             <div class="section-content hero-center">
                 <div class="hero-content">
                     <div class="hero-logo-container">
-                        <img src="Worldtel panel.jpg" alt="WORLDTEL PERU BPO" class="hero-logo">
+                        <img src="worldtel-panel.jpg" alt="WORLDTEL PERU BPO" class="hero-logo">
                     </div>
                     <p class="hero-description">Soluciones inteligentes de atención al cliente con alcance nacional</p>
                     <button type="button" class="btn-scroll-next">Descubrir Más</button>
@@ -113,7 +114,7 @@
                 
                 <div class="mascota-container">
                     <div class="mascota-circle">
-                        <img src="Worldtel mascota.jpg" alt="Mascota Worldtel" class="mascota-image">
+                        <img src="worldtel-mascota.jpg" alt="Mascota Worldtel" class="mascota-image">
                     </div>
                     <div class="speech-bubble">
                         <p>¡Usa las pestañas de arriba para navegar!</p>
@@ -148,28 +149,28 @@
                 <div class="clients-grid">
                     <div class="client-card">
                         <div class="client-logo bitel-logo">
-                            <img src="bitel logo.jpg" alt="Bitel">
+                            <img src="bitel.jpg" alt="Bitel">
                         </div>
                         <p class="client-name">BITEL</p>
                     </div>
                     
                     <div class="client-card">
                         <div class="client-logo">
-                            <img src="Win logo.jpg" alt="Win">
+                            <img src="win.jpg" alt="Win">
                         </div>
                         <p class="client-name">WIN</p>
                     </div>
 
                     <div class="client-card">
                         <div class="client-logo">
-                            <img src="Claro logo.jpg" alt="Claro">
+                            <img src="claro.jpg" alt="Claro">
                         </div>
                         <p class="client-name">CLARO</p>
                     </div>
 
                     <div class="client-card">
                         <div class="client-logo">
-                            <img src="Gi logo.jpg" alt="Estudio Jurídico Gi Coronado">
+                            <img src="gi.jpg" alt="Estudio Jurídico Gi Coronado">
                         </div>
                         <p class="client-name">Estudio Jurídico Gi Coronado</p>
                     </div>
@@ -220,13 +221,13 @@
                 <div class="gallery-container">
                     <div class="gallery-carousel">
                         <div class="carousel-slide active">
-                            <img src="recpcion.webp?v=2" alt="Recepción">
+                            <img src="reception.jpg" alt="Recepción">
                         </div>
                         <div class="carousel-slide">
-                            <img src="administtacion.webp?v=2" alt="Administración">
+                            <img src="administration.jpg" alt="Administración">
                         </div>
                         <div class="carousel-slide">
-                            <img src="ftth.webp?v=2" alt="FTTH">
+                            <img src="ftth.jpg" alt="FTTH">
                         </div>
                     </div>
 
@@ -256,9 +257,9 @@
                 
                 <div class="directory-container">
                     <!-- SHARON JALCA -->
-                    <div class="director-card-compact" onclick="openDirectorModal(this, 'Sharon Jalca', 'Director de Experiencia del Cliente', 'Como Director de Experiencia del Cliente, lidero la estrategia y ejecución de iniciativas para mejorar la satisfacción y fidelidad de nuestros clientes en todos los puntos de contacto con la marca. Mi función incluye gestionar equipos, identificar oportunidades de mejora a partir de la retroalimentación de los clientes y trabajar de manera colaborativa con áreas clave como marketing, ventas y tecnología. A través del análisis de datos y la implementación de herramientas innovadoras, busco anticipar las necesidades del cliente y superar sus expectativas.', 'Sharon J.WEBP')">
+                    <div class="director-card-compact" onclick="openDirectorModal(this, 'Sharon Jalca', 'Director de Experiencia del Cliente', 'Como Director de Experiencia del Cliente, lidero la estrategia y ejecución de iniciativas para mejorar la satisfacción y fidelidad de nuestros clientes en todos los puntos de contacto con la marca. Mi función incluye gestionar equipos, identificar oportunidades de mejora a partir de la retroalimentación de los clientes y trabajar de manera colaborativa con áreas clave como marketing, ventas y tecnología. A través del análisis de datos y la implementación de herramientas innovadoras, busco anticipar las necesidades del cliente y superar sus expectativas.', 'sharon.jpg')">
                         <div class="compact-image">
-                            <img src="Sharon J.WEBP" alt="Sharon Jalca">
+                            <img src="sharon.jpg" alt="Sharon Jalca">
                             <div class="overlay-info">
                                 <i class="fas fa-eye"></i>
                                 <span>Ver Detalles</span>
@@ -268,9 +269,9 @@
                     </div>
 
                     <!-- ALEXANDER MARISCAL -->
-                    <div class="director-card-compact" onclick="openDirectorModal(this, 'Alexander Mariscal', 'Director Comercial & Operaciones', 'Mi responsabilidad abarca la dirección de las estrategias comerciales y operativas para impulsar el crecimiento y la eficiencia de la empresa. En el área comercial, lidero el equipo de ventas, desarrollo nuevas oportunidades de negocio y gestiono relaciones clave con clientes. A nivel operativo, superviso la optimización de procesos y la ejecución eficiente de las actividades diarias, buscando siempre mejorar la productividad y garantizar la calidad en nuestros productos y servicios.', 'Alex M.WEBP')">
+                    <div class="director-card-compact" onclick="openDirectorModal(this, 'Alexander Mariscal', 'Director Comercial & Operaciones', 'Mi responsabilidad abarca la dirección de las estrategias comerciales y operativas para impulsar el crecimiento y la eficiencia de la empresa. En el área comercial, lidero el equipo de ventas, desarrollo nuevas oportunidades de negocio y gestiono relaciones clave con clientes. A nivel operativo, superviso la optimización de procesos y la ejecución eficiente de las actividades diarias, buscando siempre mejorar la productividad y garantizar la calidad en nuestros productos y servicios.', 'alexander.jpg')">
                         <div class="compact-image">
-                            <img src="Alex M.WEBP" alt="Alexander Mariscal">
+                            <img src="alexander.jpg" alt="Alexander Mariscal">
                             <div class="overlay-info">
                                 <i class="fas fa-eye"></i>
                                 <span>Ver Detalles</span>
@@ -280,9 +281,9 @@
                     </div>
 
                     <!-- DIEGO PEREZ -->
-                    <div class="director-card-compact" onclick="openDirectorModal(this, 'Diego Perez', 'Director de Recursos Humanos & Finanzas', 'Mi responsabilidad principal es gestionar dos áreas clave para el éxito de la organización: el talento humano y la salud financiera. En Recursos Humanos, lidero estrategias para atraer, desarrollar y retener talento, asegurando una cultura organizacional positiva. En Contabilidad, superviso la gestión financiera, asegurando la precisión de los informes y la optimización de recursos para asegurar la estabilidad financiera y el crecimiento de la empresa.', 'DIEGO P.WEBP')">
+                    <div class="director-card-compact" onclick="openDirectorModal(this, 'Diego Perez', 'Director de Recursos Humanos & Finanzas', 'Mi responsabilidad principal es gestionar dos áreas clave para el éxito de la organización: el talento humano y la salud financiera. En Recursos Humanos, lidero estrategias para atraer, desarrollar y retener talento, asegurando una cultura organizacional positiva. En Contabilidad, superviso la gestión financiera, asegurando la precisión de los informes y la optimización de recursos para asegurar la estabilidad financiera y el crecimiento de la empresa.', 'diego.jpg')">
                         <div class="compact-image">
-                            <img src="DIEGO P.WEBP" alt="Diego Perez">
+                            <img src="diego.jpg" alt="Diego Perez">
                             <div class="overlay-info">
                                 <i class="fas fa-eye"></i>
                                 <span>Ver Detalles</span>
@@ -469,5 +470,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="seasonal-themes.js"></script>
 </body>
 </html>
