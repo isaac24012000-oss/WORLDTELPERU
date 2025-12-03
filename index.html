@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORLDTEL PERU</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="seasonal-animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon-navbar">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <!-- WiFi waves en la parte superior -->
+                        <!-- Punto central WiFi -->
+                        <circle cx="50" cy="28" r="2.5" fill="currentColor"/>
+                        
+                        <!-- Onda WiFi 1 (pequeña) -->
+                        <path class="wifi-arc wifi-arc-1" d="M 42 28 Q 50 18 58 28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+                        
+                        <!-- Onda WiFi 2 (mediana) -->
+                        <path class="wifi-arc wifi-arc-2" d="M 35 28 Q 50 10 65 28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" opacity="0.8"/>
+                        
+                        <!-- Onda WiFi 3 (grande) -->
+                        <path class="wifi-arc wifi-arc-3" d="M 28 28 Q 50 2 72 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+                        
+                        <!-- Mundo/Globo en la parte inferior -->
+                        <!-- Círculo del globo -->
+                        <circle cx="50" cy="65" r="18" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                        
+                        <!-- Línea ecuatorial del globo -->
+                        <line x1="32" y1="65" x2="68" y2="65" stroke="currentColor" stroke-width="1" opacity="0.7"/>
+                        
+                        <!-- Meridiano del globo -->
+                        <path d="M 50 47 Q 48 56 50 83 Q 52 56 50 47" fill="none" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+                        
+                        <!-- Líneas de latitud del globo -->
+                        <ellipse cx="50" cy="58" rx="18" ry="5" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+                        <ellipse cx="50" cy="72" rx="18" ry="5" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+                    </svg>
+                </div>
+                <div class="logo-text-group">
+                    <span class="logo-text">WORLDTEL</span>
+                    <span class="logo-sub">PERU</span>
+                </div>
+            </div>
+            <div class="tagline-nav" id="taglineNav">Pasión por lo que hacemos, confianza en lo que ofrecemos</div>
+            <div class="nav-dots">
+                <div class="dot" data-section="0" title="Inicio"></div>
+                <div class="dot" data-section="1" title="Acerca de"></div>
+                <div class="dot" data-section="2" title="Clientes"></div>
+                <div class="dot" data-section="3" title="Especialidades"></div>
+                <div class="dot" data-section="4" title="Servicios"></div>
+                <div class="dot" data-section="5" title="Directorio"></div>
+                <div class="dot" data-section="6" title="Contacto"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        
+        <!-- TABS NAVIGATION -->
+        <div class="tabs-nav">
+            <button class="tab-btn active" data-tab="0">
+                <i class="fas fa-home"></i>
+                <span>Inicio</span>
+            </button>
+            <button class="tab-btn" data-tab="1">
+                <i class="fas fa-info-circle"></i>
+                <span>Acerca de</span>
+            </button>
+            <button class="tab-btn" data-tab="2">
+                <i class="fas fa-handshake"></i>
+                <span>Clientes</span>
+            </button>
+            <button class="tab-btn" data-tab="3">
+                <i class="fas fa-star"></i>
+                <span>Especialidades</span>
+            </button>
+            <button class="tab-btn" data-tab="4">
+                <i class="fas fa-images"></i>
+                <span>Galería</span>
+            </button>
+            <button class="tab-btn" data-tab="5">
+                <i class="fas fa-users"></i>
+                <span>Directorio</span>
+            </button>
+            <button class="tab-btn" data-tab="6">
+                <i class="fas fa-envelope"></i>
+                <span>Contacto</span>
+            </button>
+        </div>
+
+        <!-- TABS CONTENT -->
+        <div class="tabs-container">
+        
+        <!-- SECCIÓN 1: HERO -->
+        <div class="tab-content active" data-tab="0">
+            <div class="section-content hero-center">
+                <div class="hero-content">
+                    <div class="hero-logo-container">
+                        <img src="worldtel-panel.jpg" alt="WORLDTEL PERU BPO" class="hero-logo">
+                    </div>
+                    <p class="hero-description">Soluciones inteligentes de atención al cliente con alcance nacional</p>
+                    <button type="button" class="btn-scroll-next">Descubrir Más</button>
+                </div>
+                
+                <div class="mascota-container">
+                    <div class="mascota-circle">
+                        <img src="worldtel-mascota.jpg" alt="Mascota Worldtel" class="mascota-image">
+                    </div>
+                    <div class="speech-bubble">
+                        <p>¡Usa las pestañas de arriba para navegar!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 1: ACERCA DE -->
+        <div class="tab-content" data-tab="1">
+            <div class="section-content">
+                <h2 class="section-title">ACERCA DE NOSOTROS</h2>
+                <p class="section-subtitle">Conoce quiénes somos</p>
+                
+                <div class="about-container">
+                    <div class="about-box">
+                        <h3 class="about-company">WORLD TEL PERU BPO S.A.C.</h3>
+                        <p class="about-text">
+                            Es una empresa peruana que inicia operaciones con profesionales con experiencia en el mercado en el servicio de telemarketing, Contact center y BPO cuyos clientes son empresas de telecomunicaciones y bancos nacionales e internacionales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 2: NUESTROS CLIENTES -->
+        <div class="tab-content" data-tab="2">
+            <div class="section-content">
+                <h2 class="section-title">Nuestros Clientes</h2>
+                <p class="section-subtitle">Confianza de los principales operadores</p>
+                
+                <div class="clients-grid">
+                    <div class="client-card">
+                        <div class="client-logo bitel-logo">
+                            <img src="bitel.jpg" alt="Bitel">
+                        </div>
+                        <p class="client-name">BITEL</p>
+                    </div>
+                    
+                    <div class="client-card">
+                        <div class="client-logo">
+                            <img src="win.jpg" alt="Win">
+                        </div>
+                        <p class="client-name">WIN</p>
+                    </div>
+
+                    <div class="client-card">
+                        <div class="client-logo">
+                            <img src="claro.jpg" alt="Claro">
+                        </div>
+                        <p class="client-name">CLARO</p>
+                    </div>
+
+                    <div class="client-card">
+                        <div class="client-logo">
+                            <img src="gi.jpg" alt="Estudio Jurídico Gi Coronado">
+                        </div>
+                        <p class="client-name">Estudio Jurídico Gi Coronado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 3: ESPECIALIDADES -->
+        <div class="tab-content" data-tab="3">
+            <div class="section-content">
+                <h2 class="section-title">Nuestras Especialidades</h2>
+                <p class="section-subtitle">Servicios adicionales que ofrecemos</p>
+                
+                <div class="services-extended-container">
+                    <div class="service-extended-item">
+                        <div class="service-extended-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h3>CAMBIO DE COMPAÑÍA</h3>
+                        <p>Abordamos a los usuarios del servicio con el fin de que se cambien de compañía telefónica manteniendo su números y brindándole los mejores beneficios.</p>
+                    </div>
+
+                    <div class="service-extended-item">
+                        <div class="service-extended-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>ATENCIÓN AL CLIENTE</h3>
+                        <p>Proporcionamos asistencia a las empresas para que los clientes interactúen con su servicio y/o producto, logrando cubrir sus necesidades de manera satisfactoria y mejorando la experiencia de los consumidores finales.</p>
+                    </div>
+
+                    <div class="service-extended-item">
+                        <div class="service-extended-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>ADMINISTRACIÓN Y RECUPERACIÓN DE CARTERA</h3>
+                        <p>Gestión de cobranza en instancias: Gestión Preventiva, Administrativa, Castigada y Jurídica.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 4: GALERÍA DE FOTOS -->
+        <div class="tab-content" data-tab="4">
+            <div class="section-content">
+                <h2 class="section-title">Galería de Fotos</h2>
+                <p class="section-subtitle">Conoce nuestras instalaciones</p>
+                
+                <div class="gallery-container">
+                    <div class="gallery-carousel">
+                        <div class="carousel-slide active">
+                            <img src="1.jpeg" alt="Galería 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="2.jpeg" alt="Galería 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="3.jpeg" alt="Galería 3">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="4.jpeg" alt="Galería 4">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="5.jpeg" alt="Galería 5">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="6.jpeg" alt="Galería 6">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="7.jpeg" alt="Galería 7">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="8.jpeg" alt="Galería 8">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="9.jpeg" alt="Galería 9">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="10.jpg" alt="Galería 10">
+                        </div>
+                    </div>
+
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev" onclick="prevSlide()">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn next" onclick="nextSlide()">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="carousel-dots">
+                        <span class="dot-indicator active" onclick="goToSlide(0)"></span>
+                        <span class="dot-indicator" onclick="goToSlide(1)"></span>
+                        <span class="dot-indicator" onclick="goToSlide(2)"></span>
+                        <span class="dot-indicator" onclick="goToSlide(3)"></span>
+                        <span class="dot-indicator" onclick="goToSlide(4)"></span>
+                        <span class="dot-indicator" onclick="goToSlide(5)"></span>
+                        <span class="dot-indicator" onclick="goToSlide(6)"></span>
+                        <span class="dot-indicator" onclick="goToSlide(7)"></span>
+                        <span class="dot-indicator" onclick="goToSlide(8)"></span>
+                        <span class="dot-indicator" onclick="goToSlide(9)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 5: DIRECTORIO -->
+        <div class="tab-content" data-tab="5">
+            <div class="section-content">
+                <h2 class="section-title">Nuestro Directorio</h2>
+                <p class="section-subtitle">Conoce a los líderes de Worldtel Peru BPO</p>
+                
+                <div class="directory-container">
+                    <!-- SHARON JALCA -->
+                    <div class="director-card-compact" onclick="openDirectorModal(this, 'Sharon Jalca', 'Director de Experiencia del Cliente', 'Como Director de Experiencia del Cliente, lidero la estrategia y ejecución de iniciativas para mejorar la satisfacción y fidelidad de nuestros clientes en todos los puntos de contacto con la marca. Mi función incluye gestionar equipos, identificar oportunidades de mejora a partir de la retroalimentación de los clientes y trabajar de manera colaborativa con áreas clave como marketing, ventas y tecnología. A través del análisis de datos y la implementación de herramientas innovadoras, busco anticipar las necesidades del cliente y superar sus expectativas.', 'sharon.jpg')">
+                        <div class="compact-image">
+                            <img src="sharon.jpg" alt="Sharon Jalca">
+                            <div class="overlay-info">
+                                <i class="fas fa-eye"></i>
+                                <span>Ver Detalles</span>
+                            </div>
+                        </div>
+                        <h3 class="compact-name">Sharon Jalca</h3>
+                    </div>
+
+                    <!-- ALEXANDER MARISCAL -->
+                    <div class="director-card-compact" onclick="openDirectorModal(this, 'Alexander Mariscal', 'Director Comercial & Operaciones', 'Mi responsabilidad abarca la dirección de las estrategias comerciales y operativas para impulsar el crecimiento y la eficiencia de la empresa. En el área comercial, lidero el equipo de ventas, desarrollo nuevas oportunidades de negocio y gestiono relaciones clave con clientes. A nivel operativo, superviso la optimización de procesos y la ejecución eficiente de las actividades diarias, buscando siempre mejorar la productividad y garantizar la calidad en nuestros productos y servicios.', 'alexander.jpg')">
+                        <div class="compact-image">
+                            <img src="alexander.jpg" alt="Alexander Mariscal">
+                            <div class="overlay-info">
+                                <i class="fas fa-eye"></i>
+                                <span>Ver Detalles</span>
+                            </div>
+                        </div>
+                        <h3 class="compact-name">Alexander Mariscal</h3>
+                    </div>
+
+                    <!-- DIEGO PEREZ -->
+                    <div class="director-card-compact" onclick="openDirectorModal(this, 'Diego Perez', 'Director de Recursos Humanos & Finanzas', 'Mi responsabilidad principal es gestionar dos áreas clave para el éxito de la organización: el talento humano y la salud financiera. En Recursos Humanos, lidero estrategias para atraer, desarrollar y retener talento, asegurando una cultura organizacional positiva. En Contabilidad, superviso la gestión financiera, asegurando la precisión de los informes y la optimización de recursos para asegurar la estabilidad financiera y el crecimiento de la empresa.', 'diego.jpg')">
+                        <div class="compact-image">
+                            <img src="diego.jpg" alt="Diego Perez">
+                            <div class="overlay-info">
+                                <i class="fas fa-eye"></i>
+                                <span>Ver Detalles</span>
+                            </div>
+                        </div>
+                        <h3 class="compact-name">Diego Perez</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODAL DE DETALLES -->
+            <div class="director-modal" id="directorModal">
+                <div class="modal-content">
+                    <button class="modal-close" onclick="closeDirectorModal()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    
+                    <div class="modal-body">
+                        <div class="modal-image">
+                            <img id="modalImage" src="" alt="Director">
+                        </div>
+                        <div class="modal-info">
+                            <h2 id="modalName" class="modal-name"></h2>
+                            <p id="modalTitle" class="modal-title"></p>
+                            <p id="modalDescription" class="modal-description"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 6: CONTACTO -->
+        <div class="tab-content" data-tab="6">
+            <div class="section-content">
+                <h2 class="section-title">Contáctanos</h2>
+                <p class="section-subtitle">Estamos listos para ayudarte</p>
+                
+                <div class="contact-wrapper">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Tu correo" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Tu teléfono" required>
+                            </div>
+                            <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="info-block">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Av. República de Chile 295, Lima 15046</p>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p>+51 970 621 946</p>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p><a href="https://wa.me/51970621946">Chatea con nosotros</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.8341155969736!2d-77.00639192346892!3d-12.060169541328583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8c8c8c8c8c9%3A0x8c8c8c8c8c8c8c8c!2sAv.%20Rep%C3%BAblica%20de%20Chile%20295%2C%20Lima!5e0!3m2!1ses!2spe!4v1701459600000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-section">
+                <h3 class="footer-title">WORLDTEL</h3>
+                <p class="footer-subtitle">Soluciones inteligentes de atención al cliente</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/worldtelperu" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/worldtelperu" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/worldtel" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/worldtelperu" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4 class="footer-heading">Navegación</h4>
+                <ul class="footer-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#acerca">Acerca de</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#directorio">Directorio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="footer-section">
+                <h4 class="footer-heading">Servicios</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Atención al Cliente</a></li>
+                    <li><a href="#">Soporte Técnico</a></li>
+                    <li><a href="#">Gestión de Proyectos</a></li>
+                    <li><a href="#">Consultoría BPO</a></li>
+                    <li><a href="#">Capacitación</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section">
+                <h4 class="footer-heading">Contacto</h4>
+                <div class="footer-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p class="contact-label">Dirección</p>
+                            <p>Av. República de Chile 295, Lima 15046</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p class="contact-label">Teléfono</p>
+                            <p><a href="tel:+51970621946">+51 970 621 946</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <p class="contact-label">WhatsApp</p>
+                            <p><a href="https://wa.me/51970621946" target="_blank">+51 970 621 946</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p class="contact-label">Correo</p>
+                            <p><a href="mailto:contacto@worldtelperu.com">contacto@worldtelperu.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 WORLDTEL PERU BPO. Todos los derechos reservados.</p>
+            <div class="footer-legal">
+                <a href="#">Política de Privacidad</a>
+                <span>|</span>
+                <a href="#">Términos de Servicio</a>
+                <span>|</span>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="seasonal-themes.js"></script>
+</body>
+</html>
