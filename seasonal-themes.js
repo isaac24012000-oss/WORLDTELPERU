@@ -10,6 +10,11 @@ class SeasonalTheme {
         const month = today.getMonth() + 1;
         const day = today.getDate();
 
+        // Aniversario Worldtel (25 Marzo - 10 Abril)
+        if ((month === 3 && day >= 25) || (month === 4 && day <= 10)) {
+            return 'anniversary';
+        }
+
         // Navidad (1 Dic - 25 Dic)
         if ((month === 12 && day >= 1 && day <= 25)) {
             return 'christmas';
@@ -75,6 +80,21 @@ class SeasonalTheme {
         const style = document.createElement('style');
         
         const themes = {
+            anniversary: `
+                :root {
+                    --theme-primary: #FF1493;
+                    --theme-secondary: #FFD700;
+                    --theme-accent: #00CED1;
+                }
+                body { background: linear-gradient(135deg, #0a1f47 0%, #1a3a52 100%); }
+                .navbar { background: linear-gradient(135deg, rgba(255, 20, 147, 0.95) 0%, rgba(255, 215, 0, 0.95) 100%) !important; }
+                .footer { background: linear-gradient(135deg, #FF1493 0%, #FFD700 100%) !important; }
+                /* Confeti celebrativo */
+                @keyframes confetti-fall {
+                    0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+                    100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+                }
+            `,
             christmas: `
                 :root {
                     --theme-primary: #C41E3A;
@@ -198,11 +218,14 @@ class SeasonalTheme {
 
     addSeasonalEffects() {
         switch(this.currentTheme) {
+            case 'anniversary':
+                this.createAnniversaryConfetti();
+                break;
             case 'christmas':
                 this.createSnowfall();
                 break;
             case 'newyear':
-                this.createConfetti();
+                this.createNewYearFireworks();
                 break;
             case 'halloween':
                 this.createSpiderWeb();
@@ -282,6 +305,86 @@ class SeasonalTheme {
         }
 
         document.body.appendChild(confettiContainer);
+    }
+
+    createAnniversaryConfetti() {
+        const confettiContainer = document.createElement('div');
+        confettiContainer.id = 'anniversary-confetti-container';
+        confettiContainer.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        `;
+
+        const colors = ['#FF1493', '#FFD700', '#00CED1', '#FF69B4', '#FFB6C1'];
+        for (let i = 0; i < 150; i++) {
+            const confetti = document.createElement('div');
+            confetti.style.cssText = `
+                position: absolute;
+                left: ${Math.random() * 100}%;
+                top: -10px;
+                width: ${Math.random() * 8 + 6}px;
+                height: ${Math.random() * 8 + 6}px;
+                background: ${colors[Math.floor(Math.random() * colors.length)]};
+                border-radius: 50%;
+                animation: confetti-fall ${Math.random() * 6 + 4}s linear infinite;
+                animation-delay: ${Math.random() * 3}s;
+                box-shadow: 0 0 ${Math.random() * 8 + 4}px currentColor;
+            `;
+            confettiContainer.appendChild(confetti);
+        }
+
+        document.body.appendChild(confettiContainer);
+    }
+
+    createNewYearFireworks() {
+        const fireworksContainer = document.createElement('div');
+        fireworksContainer.id = 'newyear-fireworks-container';
+        fireworksContainer.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        `;
+
+        const createFirework = () => {
+            const firework = document.createElement('div');
+            const x = Math.random() * window.innerWidth;
+            const y = Math.random() * window.innerHeight * 0.6;
+            
+            // Emojis de fuegos artificiales
+            const emojis = ['✨', '⭐', '🌟', '💫', '🎆', '🎇'];
+            firework.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+            
+            const colors = ['#FFD700', '#FFA500', '#FF6347', '#00CED1', '#1E90FF'];
+            const selectedColor = colors[Math.floor(Math.random() * colors.length)];
+            
+            firework.style.cssText = `
+                position: absolute;
+                left: ${x}px;
+                top: ${y}px;
+                font-size: ${Math.random() * 20 + 30}px;
+                --tx: ${(Math.random() - 0.5) * 300}px;
+                --ty: ${Math.random() * 300 + 150}px;
+                animation: fireworks 2.5s ease-out forwards;
+                filter: drop-shadow(0 0 10px ${selectedColor});
+                text-shadow: 0 0 20px ${selectedColor};
+            `;
+            fireworksContainer.appendChild(firework);
+
+            setTimeout(() => firework.remove(), 2500);
+        };
+
+        // Crear fuegos artificiales más frecuentemente
+        setInterval(createFirework, 400);
+        document.body.appendChild(fireworksContainer);
     }
 
     createSpiderWeb() {
@@ -439,6 +542,7 @@ class SeasonalTheme {
             if (!taglineNav) return;
 
             const taglines = {
+                anniversary: '🎉 ¡Celebramos nuestro Aniversario! 🎊',
                 christmas: '🎄 ¡Feliz Navidad! 🎄',
                 newyear: '🎆 ¡Feliz Año Nuevo! 🎆',
                 halloween: '🎃 ¡Feliz Halloween! 👻',
